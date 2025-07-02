@@ -1,0 +1,108 @@
+//<BUTTONS (a.btn+tab)>
+// Сніппет (HTML): btn
+
+.button {
+	display: inline-flex;
+	padding: toRem(12) toRem(16);
+	align-items: center;
+	background-color: $btnColor;
+	font-weight: 500;
+	line-height: 1.5; /* 24/16 */
+	border-radius: toRem(4);
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	transition: all 0.3s;
+	cursor: pointer;
+	@media (max-width: $mobileSmall) {
+		padding: toRem(10) toRem(12);
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 0;
+		border-radius: toRem(4);
+		background-color: #fff;
+		z-index: -1;
+		transition: all 0.3s;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			color: $btnColor;
+			&::before {
+				width: 100%;
+			}
+		}
+	}
+	&.form-subscribe__button {
+		justify-content: center;
+		padding: toRem(15) toRem(26);
+		@media (min-width: $mobileSmall) {
+			width: toRem(165);
+		}
+	}
+	&.form-footer__button {
+		color: #fff;
+		justify-content: center;
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(0.95);
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+	// .button--clear
+	&--clear {
+		padding: toRem(12) toRem(16);
+		border-radius: toRem(4);
+		font-weight: 600;
+		line-height: 1.5;
+		border: toRem(1) solid #fff;
+		position: relative;
+		@media (max-width: $mobileSmall) {
+			padding: toRem(10) toRem(12);
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 0;
+			border-radius: toRem(4);
+			background-color: #fff;
+			z-index: -1;
+			transition: all 0.3s;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: $btnColor;
+				border: toRem(1) solid transparent;
+				&::before {
+					width: 100%;
+				}
+			}
+		}
+	}
+	// .button--empty
+	&--empty {
+		display: inline-flex;
+		align-self: flex-start;
+		padding: toRem(12) toRem(16);
+		border-radius: toRem(4);
+		font-weight: 600;
+		line-height: 1.5;
+		position: relative;
+		transition: all 0.3s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $btnColor;
+			}
+		}
+	}
+}

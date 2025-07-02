@@ -1,0 +1,46 @@
+// Заголовки, загальні БЕМ блоки та інше...
+
+.title {
+	font-weight: 600;
+	line-height: 1.5; /* 54/36 */
+	@include adaptiveValue("font-size", 36, 24, 0, 1440, 768);
+}
+
+.text {
+	font-weight: 500;
+	line-height: 1.5; /* 24/16 */
+	color: $textColor;
+}
+
+.descr {
+	display: inline-block;
+	font-weight: 500;
+	line-height: 1.5; /* 24/16 */
+	position: relative;
+	&::before {
+		content: "";
+		margin-top: toRem(8);
+		position: absolute;
+		width: 65%; /* 52/80 */
+		height: toRem(2);
+		border-radius: toRem(2);
+		top: 100%;
+		left: 0;
+		background-color: $btnColor;
+		transition: all 0.4s;
+	}
+}
+
+// <div class="about__content">
+// 	<div class="about__descr descr"></div>
+// 	<div class="about__body">
+// 		<h2 class="about__title title"></h2>
+// 		<div class="about__text text"></div>
+// 	</div>
+// 	<div class="about__action">
+// 		<div class="about__button button"></div>
+// 	</div>
+// </div>
+// <div class="about__image">
+// 	<img src="@img" alt="Image">
+// </div>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Foody"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__container">
+					<div class="hero__body">
+						<div class="hero__content">
+							<div class="hero__text">
+								<p>HELLO, NEW FRIEND</p>
+							</div>
+							<h1 class="hero__title">RESERVE YOUR TABLE</h1>
+							<div class="hero__actions actions-hero">
+								<button type="submit" class="actions-hero__button button--clear" data-popup="#popup_reservation">BOOK A TABLE</button>
+								<a href="https://barbarafood.choiceqr.com/section:bar/napoyi" target="_blank" class="actions-hero__link button--empty">OPEN MENU</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hero__pagination swiper-pagination">
+					<div class="swiper-pagination-bullet">1</div>
+					<div class="swiper-pagination-bullet">2</div>
+					<div class="swiper-pagination-bullet">3</div>
+				</div>
+				<div class="hero__slider swiper">
+					<div class="hero__wrapper swiper-wrapper">
+						<div class="hero__slide slide-hero swiper-slide">
+							<div class="hero__image-ibg ibg">
+								<img src="@img/main/main_bg.jpg" alt="Image">
+							</div>
+						</div>
+						<div class="hero__slide slide-hero swiper-slide">
+							<div class="hero__image-ibg ibg">
+								<img src="@img/main/main_4.jpg" alt="Image">
+							</div>
+						</div>
+						<div class="hero__slide slide-hero swiper-slide">
+							<div class="hero__image-ibg ibg">
+								<img src="@img/main/main_3.jpg" alt="Image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__about about">
+				<div data-watch class="about__container">
+					<div class="about__cards">
+						<article class="about__card card-about">
+							<div class="card-about__body">
+								<div class="card-about__descr descr">ABOUT US</div>
+								<div class="card-about__content">
+									<h2 class="card-about__title title">We Invite You to Visit Our Coffee House</h2>
+									<div class="card-about__text text">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</div>
+								</div>
+								<div class="card-about__action">
+									<a href="#" class="card-about__button button" data-popup="#readmore_popup1">READ MORE</a>
+								</div>
+							</div>
+							<div class="card-about__image">
+								<img src="@img/about/about_im_1.jpg" alt="Image">
+							</div>
+						</article>
+						<article class="about__card card-about">
+							<div class="card-about__image">
+								<img src="@img/about/about_im_2.jpg" alt="Image">
+							</div>
+							<div class="card-about__body">
+								<div class="card-about__descr descr">COFFEE MENU</div>
+								<div class="card-about__content">
+									<h2 class="card-about__title title">Quality Kava Beans</h2>
+									<div class="card-about__text text">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</div>
+								</div>
+								<div class="card-about__action">
+									<a href="#" class="card-about__button button" data-popup="#readmore_popup2">READ MORE</a>
+								</div>
+							</div>
+						</article>
+						<article class="about__card card-about">
+							<div class="card-about__body">
+								<div class="card-about__descr descr">OUR TEAM</div>
+								<div class="card-about__content">
+									<h2 class="card-about__title title">Use the Tips & Recipes of Our Barista</h2>
+									<div class="card-about__text text">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</div>
+								</div>
+								<div class="card-about__action">
+									<a href="#" class="card-about__button button" data-popup="#readmore_popup3">READ MORE</a>
+								</div>
+							</div>
+							<div class="card-about__image">
+								<img src="@img/about/about_im_3.jpg" alt="Image">
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section data-watch class="page__features features">
+				<div class="features__container">
+					<div class="features__content">
+						<div class="features__descr descr">FEATURES</div>
+						<div class="features__body">
+							<h2 class="features__title title">Why people choose us?</h2>
+							<div class="features__text text">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</div>
+						</div>
+					</div>
+					<div class="features__items">
+						<article class="features__item item-features">
+							<div class="item-features__body">
+								<div class="item-features__icon">
+									<img src="@img/icons/icon_1.svg" alt="Image">
+								</div>
+								<h3 class="item-features__title">MENU FOR EVERY TASTE</h3>
+								<div class="item-features__descr text">Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus amet massa lacus lorem. </div>
+							</div>
+						</article>
+						<article class="features__item item-features">
+							<div class="item-features__body">
+								<div class="item-features__icon">
+									<img src="@img/icons/icon_2.svg" alt="Image">
+								</div>
+								<h3 class="item-features__title">ALWAYS QUALITY BEANS</h3>
+								<div class="item-features__descr text">Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus amet massa lacus lorem. </div>
+							</div>
+						</article>
+						<article class="features__item item-features">
+							<div class="item-features__body">
+								<div class="item-features__icon">
+									<img src="@img/icons/icon_3.svg" alt="Image">
+								</div>
+								<h3 class="item-features__title">EXPERIENCED BARISTA</h3>
+								<div class="item-features__descr text">Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus amet massa lacus lorem. </div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section data-watch data-watch-threshold="0.4" class="page__reservation reservation">
+				<div class="reservation__container">
+					<div class="reservation__content">
+						<div class="reservation__descr descr">RESERVATION</div>
+						<div class="reservation__body">
+							<h2 class="reservation__title title">Working Hours</h2>
+						</div>
+						<div class="reservation__actions">
+							<button type="submit" class="reservation__button button" data-popup="#popup_reservation">BOOK A TABLE</button>
+							<a href="#" class="reservation__link button--empty">CONTACT US</a>
+						</div>
+					</div>
+					<div class="reservation__info info-reservation">
+						<div class="info-reservation__body">
+							<div class="info-reservation__top">
+								<div class="info-reservation__days">Sunday to Tuesday</div>
+								<div class="info-reservation__time">09:00 AM - 10.00 PM</div>
+							</div>
+							<div class="info-reservation__bot">
+								<div class="info-reservation__days">Friday to Saturday</div>
+								<div class="info-reservation__time">09:00 AM - 10.00 PM</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reservation__bg">
+					<img src="@img/icons/reservation_bg.jpg" alt="Image">
+				</div>
+			</section>
+			<section data-watch class="page__reviews reviews">
+				<div class="reviews__container">
+					<div class="reviews__content">
+						<div class="reviews__descr descr">FEATURES</div>
+						<div class="reviews__body">
+							<h2 class="reviews__title title">Why people choose us?</h2>
+							<div class="reviews__text text">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</div>
+						</div>
+					</div>
+					<div class="reviews__slider swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<article class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__body">
+									<div class="slide-reviews__icon">
+										<img src="@img/icons/reviews_icon_1.svg" alt="Image">
+									</div>
+									<div class="slide-reviews__text text">
+										<p>“Lorem ipsum dolor sit amet consectetur. Suspendisse aliquet tellus adipiscing condimentum donec blandit. Dignissim nunc facilisi pretium id molestie lectus duis.“</p>
+									</div>
+									<div class="slide-reviews__rank">
+										<img src="@img/icons/rank_1.png" alt="Image">
+									</div>
+									<div class="slide-reviews__author author">
+										<h3 class="author__name">John</h3>
+										<div class="author__position">Business Man</div>
+									</div>
+								</div>
+							</article>
+							<article class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__body">
+									<div class="slide-reviews__icon">
+										<img src="@img/icons/reviews_icon_2.svg" alt="Image">
+									</div>
+									<div class="slide-reviews__text text">
+										<p>“Lorem ipsum dolor sit amet consectetur. Suspendisse aliquet tellus adipiscing condimentum donec blandit. Dignissim nunc facilisi pretium id molestie lectus duis.“</p>
+									</div>
+									<div class="slide-reviews__rank">
+										<img src="@img/icons/rank_2.png" alt="Image">
+									</div>
+									<div class="slide-reviews__author author">
+										<h3 class="author__name">John</h3>
+										<div class="author__position">Business Man</div>
+									</div>
+								</div>
+							</article>
+							<article class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__body">
+									<div class="slide-reviews__icon">
+										<img src="@img/icons/reviews_icon_3.svg" alt="Image">
+									</div>
+									<div class="slide-reviews__text text">
+										<p>“Lorem ipsum dolor sit amet consectetur. Suspendisse aliquet tellus adipiscing condimentum donec blandit. Dignissim nunc facilisi pretium id molestie lectus duis.“</p>
+									</div>
+									<div class="slide-reviews__rank">
+										<img src="@img/icons/rank_3.png" alt="Image">
+									</div>
+									<div class="slide-reviews__author author">
+										<h3 class="author__name">John</h3>
+										<div class="author__position">Business Man</div>
+									</div>
+								</div>
+							</article>
+							<article class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__body">
+									<div class="slide-reviews__icon">
+										<img src="@img/icons/reviews_icon_2.svg" alt="Image">
+									</div>
+									<div class="slide-reviews__text text">
+										<p>“Lorem ipsum dolor sit amet consectetur. Suspendisse aliquet tellus adipiscing condimentum donec blandit. Dignissim nunc facilisi pretium id molestie lectus duis.“</p>
+									</div>
+									<div class="slide-reviews__rank">
+										<img src="@img/icons/rank_2.png" alt="Image">
+									</div>
+									<div class="slide-reviews__author author">
+										<h3 class="author__name">John</h3>
+										<div class="author__position">Business Man</div>
+									</div>
+								</div>
+							</article>
+							<article class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__body">
+									<div class="slide-reviews__icon">
+										<img src="@img/icons/reviews_icon_3.svg" alt="Image">
+									</div>
+									<div class="slide-reviews__text text">
+										<p>“Lorem ipsum dolor sit amet consectetur. Suspendisse aliquet tellus adipiscing condimentum donec blandit. Dignissim nunc facilisi pretium id molestie lectus duis.“</p>
+									</div>
+									<div class="slide-reviews__rank">
+										<img src="@img/icons/rank_3.png" alt="Image">
+									</div>
+									<div class="slide-reviews__author author">
+										<h3 class="author__name">John</h3>
+										<div class="author__position">Business Man</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="reviews__pagination swiper-pagination"></div>
+					</div>
+					<div data-watch class="reviews__stat stat-reviews">
+						<div class="stat-reviews__items">
+							<div class="stat-reviews__item item-stat">
+								<div class="item-stat__value">
+									<div data-digits-counter data-digits-counter-speed="2000" class="item-stat__digit">1287</div>
+									<div class="item-stat__digit--element">+</div>
+								</div>
+								<div class="item-stat__descr">VISITORS DAILY</div>
+							</div>
+							<div class="stat-reviews__item item-stat">
+								<div class="item-stat__value">
+									<div data-digits-counter data-digits-counter-speed="2000" class="item-stat__digit">578</div>
+									<div class="item-stat__digit--element">+</div>
+								</div>
+								<div class="item-stat__descr">DELIVERIES MONTHLY</div>
+							</div>
+							<div class="stat-reviews__item item-stat">
+								<div class="item-stat__value">
+									<div data-digits-counter data-digits-counter-speed="2000" class="item-stat__digit">1440</div>
+									<div class="item-stat__digit--element">+</div>
+								</div>
+								<div class="item-stat__descr">POSITIVE FEEDBACK</div>
+							</div>
+							<div class="stat-reviews__item item-stat">
+								<div class="item-stat__value">
+									<div data-digits-counter data-digits-counter-speed="2000" class="item-stat__digit">40</div>
+									<div class="item-stat__digit--element">+</div>
+								</div>
+								<div class="item-stat__descr">AWARDS AND HONORS</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			<section data-watch data-watch-threshold="0.4" class="page__order order">
+				<div class="order__container">
+					<div class="order__body">
+						<h2 class="order__title">Simple Way To Order Your Foods</h2>
+						<div class="order__links">
+							<a href="https://play.google.com/" class="order__link" target="_blank">
+								<img src="@img/order/g_im.jpg" alt="Image">
+							</a>
+							<a href="https://apps.apple.com/" class="order__link" target="_blank">
+								<img src="@img/order/app_im.jpg" alt="Image">
+							</a>
+						</div>
+					</div>
+					<div class="order__images">
+						<div class="order__image order__image--left">
+							<img data-prlx-mouse data-prlx-cx="200" data-prlx-cy="400" data-prlx-a="30" src="@img/order/im_left.png" alt="Image">
+						</div>
+						<div class="order__image order__image--right">
+							<img data-prlx-mouse data-prlx-cx="200" data-prlx-cy="-400" data-prlx-a="30" src="@img/order/im_right.png" alt="Image">
+						</div>
+					</div>
+				</div>
+				<div class="order__bg">
+					<img src="@img/order/order_bg.jpg" alt="Image">
+				</div>
+			</section>
+			<section data-watch class="page__explore explore">
+				<div class="explore__container">
+					<div class="explore__content">
+						<div class="explore__descr descr">MENU</div>
+						<div class="explore__body">
+							<h2 class="explore__title title">Explore Our Foods</h2>
+							<div class="explore__text text">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.</div>
+						</div>
+					</div>
+					<div class="explore__items">
+						<article class="explore__item item-explore">
+							<div class="item-explore__image">
+								<a href="#" class="item-explore__image--link">
+									<img src="@img/explore/explore_im1.jpg" alt="Image">
+								</a>
+							</div>
+							<div class="item-explore__body">
+								<h4 class="item-explore__title">
+									<a href="#" class="item-explore__title--link">Raspberry French Toast</a>
+								</h4>
+								<div class="item-explore__descr">Time: 10 - 15 Minutes | Serves: 1</div>
+								<div class="item-explore__prices">
+									<div class="item-explore__price">$12.50</div>
+									<div class="item-explore__price item-explore__price--crossed">$13.20</div>
+								</div>
+								<a href="#" class="item-explore__button button">Order Now</a>
+							</div>
+						</article>
+						<article class="explore__item item-explore">
+							<div class="item-explore__image">
+								<a href="#" class="item-explore__image--link">
+									<img src="@img/explore/explore_im2.jpg" alt="Image">
+								</a>
+							</div>
+							<div class="item-explore__body">
+								<h4 class="item-explore__title">
+									<a href="#" class="item-explore__title--link">Raspberry French Toast</a>
+								</h4>
+								<div class="item-explore__descr">Time: 10 - 15 Minutes | Serves: 1</div>
+								<div class="item-explore__prices">
+									<div class="item-explore__price">$12.50</div>
+									<div class="item-explore__price item-explore__price--crossed">$13.20</div>
+								</div>
+								<a href="#" class="item-explore__button button">Order Now</a>
+							</div>
+						</article>
+						<article class="explore__item item-explore">
+							<div class="item-explore__image">
+								<a href="#" class="item-explore__image--link">
+									<img src="@img/explore/explore_im3.jpg" alt="Image">
+								</a>
+							</div>
+							<div class="item-explore__body">
+								<h4 class="item-explore__title">
+									<a href="#" class="item-explore__title--link">Raspberry French Toast</a>
+								</h4>
+								<div class="item-explore__descr">Time: 10 - 15 Minutes | Serves: 1</div>
+								<div class="item-explore__prices">
+									<div class="item-explore__price">$12.50</div>
+									<div class="item-explore__price item-explore__price--crossed">$13.20</div>
+								</div>
+								<a href="#" class="item-explore__button button">Order Now</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section data-watch data-watch-threshold="0.7" class="page__subscribe subscribe">
+				<div class="subscribe__container">
+					<div class="subscribe__content">
+						<div class="subscribe__descr descr">NEWS LETTER</div>
+						<div class="subscribe__body">
+							<h2 class="subscribe__title title">Subscribe Our Newsletter</h2>
+							<div class="subscribe__text text">Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. </div>
+						</div>
+					</div>
+					<form class="subscribe__form form-subscribe" action="files/sendmail/sendmail.php" method="POST">
+						<input type="text" name="form[email]" data-error="Error" placeholder="Type here" class="form-subscribe__input">
+						<button type="submit" class="form-subscribe__button button">Subscribe</button>
+					</form>
+					<div class="subscribe__bg">
+						<img src="@img/icons/subscribe_bg.jpg" alt="Image">
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_preloader.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+.header {
+	position: fixed; // sticky
+	// position: absolute;
+	top: toRem(-150);
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	//========================================================================================================================================================
+	//* Animation
+	opacity: 0;
+	// transform: top(toRem(150));
+	.loaded & {
+		@include adaptiveValue("top", 44, 20, 0, 1440, 768);
+		opacity: 1;
+		transition:
+			opaсity 0.4s ease-out 0.4s,
+			top 0.7s;
+	}
+		&._header-scroll {
+		top: toRem(5);
+	}
+	//========================================================================================================================================================
+	// .header__container
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: toRem(15);
+		padding-top: toRem(5);
+		padding-bottom: toRem(5);
+		transition: all 0.4s;
+		._header-scroll & {
+			padding: toRem(15);
+			border-radius: toRem(8);
+			background-color: rgba(0, 0, 0, 0.75);
+			box-shadow: toRem(1.5) toRem(1.5) toRem(20) rgba(0, 0, 0, 0.7);
+			//toRem(-0.5) toRem(-0.5) toRem(4) $mainColor;
+		}
+	}
+	// .header__logo
+	&__logo {
+		position: relative;
+		z-index: 2;
+		@media (max-width: $mobileSmall) {
+			width: toRem(34);
+			overflow: hidden;
+		}
+	}
+	// .header__menu
+	&__menu {
+	}
+	// .header__action
+	&__action {
+		@media (max-width: $mobile) {
+			margin: 0 auto;
+		}
+	}
+	// .header__button
+	&__button {
+	}
+}
